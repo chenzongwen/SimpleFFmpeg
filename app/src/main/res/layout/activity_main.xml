@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="90dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/h264viewContainer"
+            android:layout_width="440dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_height="match_parent">
+        </RelativeLayout>
+
+        <SurfaceView
+            android:id="@+id/cameraPreview"
+            android:layout_width="131dp"
+            android:layout_height="95dp"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="20dp"/>
+
+    </FrameLayout>
+
+
+    <EditText
+        android:id="@+id/idText"
+        android:layout_width="160dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginBottom="15dp"
+        android:gravity="center"
+        android:text="127.0.0.1"
+        android:textColor="@color/colorPrimary"/>
+
+    <Button
+        android:id="@+id/startBtn"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:text="Start"/>
+
+    <Button
+        android:id="@+id/recordVideo"
+        android:layout_width="100dp"
+        android:layout_height="60dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="15dp"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@id/startBtn"
+        android:text="Record"/>
+
+</RelativeLayout>
+
